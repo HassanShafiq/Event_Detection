@@ -1,8 +1,8 @@
 import cv2
 import os
 
-video_path = '/home/tianz/datasets/ucf101/'
-save_path = '/home/tianz/datsets/ucfimgs/'
+video_path = '~/Drive_2/Dataset/'
+save_path = '~/Drive_2/ucf_frames/abnormal/'
 
 action_list = os.listdir(video_path)
 
