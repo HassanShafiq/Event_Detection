@@ -104,7 +104,7 @@ from keras.models import model_from_json
 model = multi_gpu_model(model1, gpus=2)
 le=0.001
 opt = SGD(lr=le, momentum=0.009, decay=le)
-model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['categorical_accuracy'])
+model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
 #train_frame_list1,class_list_train1,test_frame_list1,class_list_test1= train_test_split(generate_data(train_frame_list,class_list_train,batch_size),test_size=0.33, random_state=42)
 
 #----------------------------Strat_Training-------------------------------------------#
